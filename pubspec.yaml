@@ -1,7 +1,7 @@
-name: flutter_esc_pos_utils
+name: flutter_esc_pos_utils_plus
 description: This package is used to generate ESC/pos commands to print using Bluetooth, WiFi/Network, or USB printers.
 version: 1.0.0
-homepage: https://github.com/mjafartp/flutter_esc_pos_utils
+homepage: https://github.com/mjafartp/flutter_esc_pos_utils_plus
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -21,4 +21,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - packages/flutter_esc_pos_utils/resources/capabilities.json
+    - packages/flutter_esc_pos_utils_plus/resources/capabilities.json

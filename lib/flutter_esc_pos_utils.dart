@@ -1,4 +1,4 @@
-library flutter_esc_pos_utils;
+library flutter_esc_pos_utils_plus;
 
 export 'src/barcode.dart';
 export 'src/capability_profile.dart';
