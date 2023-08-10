@@ -2,7 +2,9 @@ import 'dart:convert';
 import 'dart:typed_data' show Uint8List;
 import 'package:hex/hex.dart';
 import 'package:image/image.dart';
-import 'package:gbk_codec/gbk_codec.dart';
+// import 'package:gbk_codec/gbk_codec.dart';
+import 'package:fast_gbk/fast_gbk.dart';
+
 import 'package:flutter_esc_pos_utils_plus/flutter_esc_pos_utils.dart';
 import 'commands.dart';
 
@@ -71,7 +73,7 @@ class Generator {
     if (!isKanji) {
       return codec.encode(text);
     } else {
-      return Uint8List.fromList(gbk_bytes.encode(text));
+      return Uint8List.fromList(gbk.encode(text));
     }
   }
 
